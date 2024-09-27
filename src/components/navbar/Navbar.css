@@ -1,0 +1,157 @@
+/* تصميم عام للمكون */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+  }
+  .iconCartCounter{
+    position: relative;
+  }
+  .iconCartCounter p{
+    position: absolute;
+    bottom: 76%;
+    left: 70%;
+    border-radius: 50%;
+    background-color: #ff2400d6;
+    color: white;
+    padding: 3px;
+    font-size: 11px;
+
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .navbar-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #f0c14b;
+  }
+  
+  .navbar-auth-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-btn {
+    background-color: #f0c14b;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .login-btn:hover {
+    background-color: #e5b135;
+  }
+  
+  .cart-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* --- التصميم المتجاوب --- */
+  
+  /* الهواتف المحمولة */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-menu li {
+      margin: 10px 0;
+    }
+  
+    .navbar-auth-cart {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+  
+    .login-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .cart-icon img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  /* الشاشات الصغيرة مثل الأجهزة اللوحية */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .navbar-menu {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .navbar-menu li {
+      margin: 0 10px;
+    }
+    .navbar-menu hr{ 
+    background-color: #e5b135;
+      height: 2px;
+    }
+    .login-btn {
+      padding: 0.5rem 0.8rem;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+  }
+  

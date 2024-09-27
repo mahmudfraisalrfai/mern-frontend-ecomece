@@ -1,0 +1,7 @@
+.Product-container{
+    background:linear-gradient(180deg,#e5b135,#e1ffea22 60%);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}

@@ -1,0 +1,84 @@
+/* DescriptionBox.css */
+.descriptionBox {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .descriptionBox-navigetor {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .descriptionBox-nav-box {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .descriptionBox-nav-box:hover {
+    background-color: #e5b135;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .descriptionBox-nav-box.active {
+    background-color: #e5b135;
+    color: #fff;
+  }
+  
+  .descriptionBox-description {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .descriptionBox-description p {
+    margin-bottom: 15px;
+  }
+  
+  .descriptionBox-description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .descriptionBox .fade {
+    opacity: 0.6;
+  }
+  
+  .descriptionBox .fade:hover {
+    opacity: 1;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .descriptionBox {
+      padding: 15px;
+    }
+  
+    .descriptionBox-navigetor {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .descriptionBox-nav-box {
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .descriptionBox-nav-box:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

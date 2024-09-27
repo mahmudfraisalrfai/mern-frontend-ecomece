@@ -1,0 +1,132 @@
+/* التصميم العام للبطاقة */
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* تصميم الصورة */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .image-container img {
+    transform: scale(1.05);
+  }
+  
+  /* تفاصيل المنتج */
+  .product-details {
+    padding: 20px;
+  }
+  
+  .product-name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* السعر */
+  .price-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .new-price {
+    font-size: 24px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .old-price {
+    font-size: 18px;
+    color: #b2b2b2;
+    text-decoration: line-through;
+  }
+  
+  /* التقييم */
+  .stars-section {
+    margin-bottom: 15px;
+  }
+  
+  .filled-star {
+    color: #f39c12;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .empty-star {
+    color: #e0e0e0;
+    font-size: 18px;
+  }
+  
+  .stars-section span:hover {
+    color: #f39c12;
+  }
+  
+  /* اختيار الحجم */
+  .size-section {
+    margin: 15px 0;
+  }
+  
+  .size-btn {
+    background-color: white;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .size-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .size-btn.selected {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* زر إضافة إلى السلة */
+  .add-to-cart-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+  }
+  

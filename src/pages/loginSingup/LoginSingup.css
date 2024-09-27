@@ -1,0 +1,126 @@
+/* LoginSignup Styles */
+.loginSingup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background:linear-gradient(180deg,#e5b135,#e1ffea22 60%);
+
+   
+  }
+  
+  .loginSingup-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+ .loginSingup h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  .loginSingup .container-input-wrong{
+    margin-bottom: 16px;
+
+  }
+  .loginSingup .wrong{
+    color: rgba(255, 0, 0, 0.756);
+  }
+  .loginSingup-fields input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .loginSingup-fields input:focus {
+    outline: none;
+    border-color: #e5b135;
+    box-shadow: 0 0 4px rgba(229, 177, 53, 0.5);
+  }
+  
+ .loginSingup button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e5b135;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+ .loginSingup button:hover {
+    background-color: #c49a2d;
+  }
+  
+  .loginSingup-login {
+    text-align: center;
+    margin-top: 16px;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .loginSingup-login span {
+    color: #e5b135;
+    cursor: pointer;
+  }
+  
+  .loginSingup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .loginSingup-agree input {
+    margin-right: 10px;
+  }
+  
+  .loginSingup-agree p {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .loginSingup-container {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .loginSingup-container {
+      padding: 15px;
+    }
+    
+   .loginSingup h1 {
+      font-size: 20px;
+    }
+    
+    .loginSingup-fields input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+   .loginSingup button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .loginSingup-login {
+      font-size: 12px;
+    }
+  }
+  
